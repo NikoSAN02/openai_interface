@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  font-family: "Righteous", cursive;
+  min-height: 100vh;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+}
+body .punter {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+body .punter .card {
+  position: relative;
+  width: 700px;
+  height: 580px;
+  margin: 0 auto;
+  background: transparent;
+  border: 2px solid #c200e9;
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+body .punter .card .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .punter .card .face.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+body .punter .card .face.face1 h2 {
+  margin: 0;
+  padding: 0;
+}
+body .punter .card .face.face1 .java {
+  background-color: #9900ff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body .punter .card .face.face1 .cSharp {
+  background-color: #480a49;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body .punter .card .face.face2 {
+  transition: 0.5s;
+}
+body .punter .card .face.face2 h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  color: #fff;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+body .punter .card:hover .face.face2 {
+  height: 60px;
+}
+body .punter .card:hover .face.face2 h2 {
+  font-size: 2em;
+}
+body .punter .card:nth-child(1) .face.face2 {
+  background-image: linear-gradient(160deg, #0093E9 0%, #6344eb 100%);
+  border-radius: 15px;
+}
+body .punter .card:nth-child(2) .face.face2 {
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+  border-radius: 15px;
+}
+
+.popup:hover{  
+  filter: blur(0px);
+}
+#popup{
+  position: fixed;
+  top: 40%;
+  left:50%
+}
